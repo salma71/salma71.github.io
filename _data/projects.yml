@@ -1,0 +1,26 @@
+# projects section data
+# If you don't have language feature(language.yml is empty), ignore "i18n" items
+# Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
+- name: Home Credit Risk Analysis
+  gh_user: salma71
+  repo: home_credit_risk
+  img: /static/assets/img/home_credit/feature_imp.png
+  desc: Hands-On-Guide on manual feature engineering using advanced data manipulations via pandas aggregation functions.  
+
+- name: Book Recommendation system
+  gh_user: salma71
+  repo: book_recommendation_model
+  img: /static/assets/img/book_recomend/book_recommend.png
+  desc: Using big data to develop a fully functional book recommendation using ML Pyspark library. The model uses the CBF to recommend books to new users. The output recommendations are stored in a big JSON format for fast integrate into existing applications. 
+
+- name: Loan Prediction Hackathon
+  gh_user: salma71
+  repo: loan_prediction_hackathon
+  img: /static/assets/img/loan_prediction.png
+  desc: Automating the loan eligibility process (real time) based on customer detail provided while filling online application form. A comparation between different ML algorithms have been conducted before applying to pick the most efficient one.
+
+- name: Scrapping the best tutorials on datacamp
+  gh_user: salma71
+  repo: Scrapping_best-tutorials-on-data-camp
+  img: static/assets/img/datacamp.png
+  desc: utilizing BeautifulSoup to scrape datacamp community tutorials and store it in a CSV format for further analysis.
