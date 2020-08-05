@@ -16,12 +16,29 @@
   topic: Python, ML, Amazon Bigdata
   desc: Utilized big data to develop a fully functional book recommendation using ML Pyspark library. The model uses the CBF to recommend books to new users. The output recommendations are stored in a big JSON format for fast integration into existing applications. 
 
+- name: Predicting house prices - Kaggle competition
+  gh_user: salma71
+  repo: MSDS_SP2020/tree/master/Spring2020/computational_mod_605/Final_exam
+  img: /static/assets/img/house_prices.png
+  topic: R, EDA, Regrission analysis
+  url-s: https://rpubs.com/salmaeng/kaggle_houseprices
+  desc: Utilized different advanced types of regression to predict the final price of each home with more than 70 explanatory independent variables.
+
+- name: Spam Ham Classifier
+  gh_user: salma71
+  repo: MSDS_2019/tree/master/Fall2019/aquisition_management_607/week_10
+  img: /static/assets/img/spam-ham.png
+  topic: R, NLP, classification
+  url-s: https://rpubs.com/salmaeng/spam_ham_classifier
+  desc: The goal of this project is to build a spam filter that can effectively categorise an incoming mail or text message as either spam or ham. I will use a dataset from this apache of public corpus.
+
 - name: Loan Prediction Hackathon
   gh_user: salma71
   repo: loan_prediction_hackathon
   img: /static/assets/img/loan_prediction.png
   topic: Python, Supervised learning, classification
   desc: Automating the loan eligibility process (real time) based on customer detail provided while filling online application form. A comparation between different ML algorithms have been conducted before applying to pick the most efficient one.
+
 
 - name: Scrapping the best tutorials on datacamp
   gh_user: salma71
@@ -36,3 +53,4 @@
   img: static/assets/img/studyhub.png
   desc: CRUD application in Ruby on Rails as backend, javascript as a frontend and deployed to Heroku.
   topic: Ruby, web-development, OOP, Fullstack
+
