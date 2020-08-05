@@ -6,24 +6,28 @@
   gh_user: salma71
   repo: home_credit_risk
   img: /static/assets/img/home_credit/feature_imp.png
+  topic: Python, ML, EDA, Feature engineering
   desc: A Kaggle competition to predict how capable each applicant is of repaying a loan. The objective of this model is to use historical loan application data to predict whether or not an applicant will be able to repay a loan. Manual feature engineering has been used by utilizing advanced pandas data manipulation and aggregation functions.
 
 - name: Book Recommendation system
   gh_user: salma71
   repo: book_recommendation_model
   img: /static/assets/img/book_recomend/book_recommend.png
+  topic: Python, ML, Amazon Bigdata
   desc: Utilized big data to develop a fully functional book recommendation using ML Pyspark library. The model uses the CBF to recommend books to new users. The output recommendations are stored in a big JSON format for fast integration into existing applications. 
 
 - name: Loan Prediction Hackathon
   gh_user: salma71
   repo: loan_prediction_hackathon
   img: /static/assets/img/loan_prediction.png
+  topic: Python, Supervised learning, classification
   desc: Automating the loan eligibility process (real time) based on customer detail provided while filling online application form. A comparation between different ML algorithms have been conducted before applying to pick the most efficient one.
 
 - name: Scrapping the best tutorials on datacamp
   gh_user: salma71
   repo: Scrapping_best-tutorials-on-data-camp
   img: static/assets/img/datacamp.png
+  topic: Python, Data wrangling, I/O operations
   desc: Utilized the BeautifulSoup library to scrape the tutorials published on the Datacamp community edition. Then wrote the results into a comma-separated file CSV for further analysis.
 
 - name: StudyHub
@@ -31,5 +35,4 @@
   repo: studyhub
   img: static/assets/img/studyhub.png
   desc: CRUD application in Ruby on Rails as backend, javascript as a frontend and deployed to Heroku.
-  categories: [jekyll]
-  tags: [jekyll]
+  topic: Ruby, web-development, OOP, Fullstack
