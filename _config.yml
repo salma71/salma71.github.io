@@ -36,4 +36,6 @@ kramdown:
   hard_wrap: false
 
 plugins: ['jekyll-paginate']
+paginate: 3
+paginate_path: "/page:num/"
 exclude: ['README.md', 'screenshot-overview.png']

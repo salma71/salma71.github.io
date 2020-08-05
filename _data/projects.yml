@@ -1,17 +1,18 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
-- name: Home Credit Risk Analysis
+
+- name: Home Credit default Risk Analysis
   gh_user: salma71
   repo: home_credit_risk
   img: /static/assets/img/home_credit/feature_imp.png
-  desc: Hands-On-Guide on manual feature engineering using advanced data manipulations via pandas aggregation functions.  
+  desc: A Kaggle competition to predict how capable each applicant is of repaying a loan. The objective of this model is to use historical loan application data to predict whether or not an applicant will be able to repay a loan. Manual feature engineering has been used by utilizing advanced pandas data manipulation and aggregation functions.
 
 - name: Book Recommendation system
   gh_user: salma71
   repo: book_recommendation_model
   img: /static/assets/img/book_recomend/book_recommend.png
-  desc: Using big data to develop a fully functional book recommendation using ML Pyspark library. The model uses the CBF to recommend books to new users. The output recommendations are stored in a big JSON format for fast integrate into existing applications. 
+  desc: Utilized big data to develop a fully functional book recommendation using ML Pyspark library. The model uses the CBF to recommend books to new users. The output recommendations are stored in a big JSON format for fast integration into existing applications. 
 
 - name: Loan Prediction Hackathon
   gh_user: salma71
@@ -23,4 +24,12 @@
   gh_user: salma71
   repo: Scrapping_best-tutorials-on-data-camp
   img: static/assets/img/datacamp.png
-  desc: utilizing BeautifulSoup to scrape datacamp community tutorials and store it in a CSV format for further analysis.
+  desc: Utilized the BeautifulSoup library to scrape the tutorials published on the Datacamp community edition. Then wrote the results into a comma-separated file CSV for further analysis.
+
+- name: StudyHub
+  gh_user: salma71
+  repo: studyhub
+  img: static/assets/img/studyhub.png
+  desc: CRUD application in Ruby on Rails as backend, javascript as a frontend and deployed to Heroku.
+  categories: [jekyll]
+  tags: [jekyll]

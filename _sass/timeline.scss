@@ -130,6 +130,7 @@
 .timeline .timeline-body>p,
 .timeline .timeline-body>ul {
     margin-bottom: 0;
+    margin-top: 20px;
 }
 
 @media(min-width:768px) {
@@ -160,8 +161,8 @@
 
     .img-me {
         //left: 50%;
-        width: 86px;
-        height: 86px;
+        width: 170px;
+        height: 160px;
     }
 
     .timeline>li .timeline-image h4 {
@@ -196,8 +197,8 @@
 
     .timeline>li .timeline-image {
         visibility: visible;
-        width: 150px;
-        height: 150px;
+        width: 170px;
+        height: 160px;
         margin-left: -75px;
     }
 
@@ -220,7 +221,8 @@
     }
 
     .timeline>li.timeline-inverted>.timeline-panel {
-        padding: 0 20px 20px;
+        padding: 0;
+        margin-left: 50px;
     }
 }
 
