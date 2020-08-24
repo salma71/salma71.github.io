@@ -30,14 +30,14 @@
   img: /static/assets/img/spam-ham.png
   topic: R, NLP, classification
   url-s: https://rpubs.com/salmaeng/spam_ham_classifier
-  desc: The goal of this project is to build a spam filter that can effectively categorise an incoming mail or text message as either spam or ham. I will use a dataset from this apache of public corpus.
+  desc: The goal of this project was to build a spam filter that can effectively categorise an incoming mail or text message as either spam or ham. 
 
 - name: Loan Prediction Hackathon
   gh_user: salma71
   repo: loan_prediction_hackathon
   img: /static/assets/img/loan_prediction.png
   topic: Python, Supervised learning, classification
-  desc: Automating the loan eligibility process (real time) based on customer detail provided while filling online application form. A comparation between different ML algorithms have been conducted before applying to pick the most efficient one.
+  desc: Automating the loan eligibility process (real time) based on customer detail provided while filling online application form. A comparasion between different ML algorithms have been conducted before applying to pick the most efficient one.
 
 
 - name: Scrapping the best tutorials on datacamp
@@ -45,7 +45,7 @@
   repo: Scrapping_best-tutorials-on-data-camp
   img: static/assets/img/datacamp.png
   topic: Python, Data wrangling, I/O operations
-  desc: Utilized the BeautifulSoup library to scrape the tutorials published on the Datacamp community edition. Then wrote the results into a comma-separated file CSV for further analysis.
+  desc: Utilized the BeautifulSoup library to scrape tutorials published on the Datacamp community edition. Then wrote the results into a comma-separated file (CSV) for further analysis.
 
 - name: StudyHub
   gh_user: salma71
