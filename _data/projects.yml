@@ -6,7 +6,7 @@
   repo: prediction_app
   img: /static/assets/img/regression_model_package.png
   topic: Python, ML, Dev-ops, packaging, deployment
-  url-s: https://regpackage.herokuapp.com/version 
+  url-s: https://github.com/salma71/prediction_app 
   desc: Develop a regression model package and publish it to a host platform. Build a full cycle API end-points using Flask API, compose a docker image, and deploy to Heroku. The project following the CI/CD pipelines. 
 
 
