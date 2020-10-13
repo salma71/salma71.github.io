@@ -1,6 +1,14 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
+- name: Regression model reusable package
+  gh_user: salma71
+  repo: prediction_app
+  img: /static/assets/img/regression_model_package.png
+  topic: Python, ML, Dev-ops, packaging, deployment
+  url-s: https://regpackage.herokuapp.com/version 
+  desc: Develop a regression model package and publish it to a host platform. Build a full cycle API end-points using Flask API, compose a docker image, and deploy to Heroku. The project following the CI/CD pipelines. 
+
 
 - name: Home Credit default Risk Analysis
   gh_user: salma71
@@ -39,6 +47,13 @@
   topic: Python, Supervised learning, classification
   desc: Automating the loan eligibility process (real time) based on customer detail provided while filling online application form. A comparasion between different ML algorithms have been conducted before applying to pick the most efficient one.
 
+- name: Todo application
+  gh_user: salma71
+  repo: sinatra_todo_app
+  img: static/assets/img/sinatra_todo.png
+  desc: CRUD application in Ruby on Rails as backend, javascript as a frontend and deployed to Heroku.
+  url-s: https://boiling-depths-96093.herokuapp.com/
+  topic: Ruby, web-development, OOP, postgress, Dev-ops
 
 - name: Scrapping the best tutorials on datacamp
   gh_user: salma71
@@ -52,5 +67,6 @@
   repo: studyhub
   img: static/assets/img/studyhub.png
   desc: CRUD application in Ruby on Rails as backend, javascript as a frontend and deployed to Heroku.
-  topic: Ruby, web-development, OOP, Fullstack
+  url-s: https://damp-wave-35943.herokuapp.com/users/sign_in
+  topic: Javascript, web-development, OOP, Fullstack
 
