@@ -9,6 +9,14 @@
   url-s: https://github.com/salma71/prediction_app 
   desc: Develop a regression model package and publish it to a host platform. Build a full cycle API end-points using Flask API, compose a docker image, and deploy to Heroku. The project following the CI/CD pipelines. 
 
+- name: Interactive COVID tracking dashboard
+  gh_user: salma71
+  repo: COVID19_tracker
+  img: /static/assets/img/covid.png
+  topic: Python, D3js, Dash, Heroku
+  url-s: https://covid-tracker-states.herokuapp.com/
+  desc: An interactive dashboard build with python and Dash with charts made with plotly to track the covid cases in the United States. The dashboard deployed to Heroku Paas platform for easy access and sharing.
+
 
 - name: Home Credit default Risk Analysis
   gh_user: salma71
@@ -23,6 +31,14 @@
   img: /static/assets/img/book_recomend/book_recommend.png
   topic: Python, ML, Amazon Bigdata
   desc: Utilized big data to develop a fully functional book recommendation using ML Pyspark library. The model uses the CBF to recommend books to new users. The output recommendations are stored in a big JSON format for fast integration into existing applications. 
+
+- name: Todo application
+  gh_user: salma71
+  repo: sinatra_todo_app
+  img: static/assets/img/sinatra_todo.png
+  desc: CRUD application in Ruby on Rails as backend, javascript as a frontend and deployed to Heroku.
+  url-s: https://boiling-depths-96093.herokuapp.com/
+  topic: Ruby, web-development, OOP, postgress, Dev-ops
 
 - name: Predicting house prices - Kaggle competition
   gh_user: salma71
@@ -47,13 +63,6 @@
   topic: Python, Supervised learning, classification
   desc: Automating the loan eligibility process (real time) based on customer detail provided while filling online application form. A comparasion between different ML algorithms have been conducted before applying to pick the most efficient one.
 
-- name: Todo application
-  gh_user: salma71
-  repo: sinatra_todo_app
-  img: static/assets/img/sinatra_todo.png
-  desc: CRUD application in Ruby on Rails as backend, javascript as a frontend and deployed to Heroku.
-  url-s: https://boiling-depths-96093.herokuapp.com/
-  topic: Ruby, web-development, OOP, postgress, Dev-ops
 
 - name: Scrapping the best tutorials on datacamp
   gh_user: salma71
