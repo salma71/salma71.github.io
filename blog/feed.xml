@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel>
+<title>Blog by Salma Elmasry</title><link>https://salma71.github.io/blog/</link>
+<description>Notes on data platforms, governed AI analytics, and what a warehouse costs to run.</description>
+<language>en-us</language><lastBuildDate>Thu, 29 Oct 2026 18:00:46 +0000</lastBuildDate>
+<item><title>What we refused to let our AI analyst do</title><link>https://salma71.github.io/blog/governed-ai-analyst/</link><guid isPermaLink="true">https://salma71.github.io/blog/governed-ai-analyst/</guid><pubDate>Thu, 29 Oct 2026 12:00:00 +0000</pubDate><description>How a read-only AI analyst on BigQuery got its design from a list of things it would never do: write data, invent metrics, or answer unsafe questions.</description></item>
+</channel></rss>

@@ -1,0 +1,10 @@
+[
+  {
+    "slug": "governed-ai-analyst",
+    "title": "What we refused to let our AI analyst do",
+    "dek": "The design of a read-only question-answering layer on BigQuery started with a list of things it would never do.",
+    "description": "How a read-only AI analyst on BigQuery got its design from a list of things it would never do: write data, invent metrics, or answer unsafe questions.",
+    "date": "2026-10-29",
+    "tags": ["AI analytics", "BigQuery", "Governance"]
+  }
+]
