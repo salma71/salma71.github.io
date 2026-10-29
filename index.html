@@ -188,8 +188,8 @@ footer{margin-top:5rem;padding:1.5rem 0 2.5rem;border-top:1px solid var(--rule);
   <header class="bar">
     <a class="name" href="#top">Salma Elmasry</a>
     <nav aria-label="Primary">
-      <a href="#results">Results</a>
       <a href="#work">Work</a>
+      <a href="#results">Results</a>
       <a href="#experience">Experience</a>
       <a href="/writing/">Writing</a>
       <a href="#contact">Contact</a>
@@ -229,9 +229,23 @@ footer{margin-top:5rem;padding:1.5rem 0 2.5rem;border-top:1px solid var(--rule);
 
   <div class="page">
 
+    <section id="work" aria-labelledby="work-h">
+      <div class="cols">
+        <h2 id="work-h">Recent work at Dose Daily</h2>
+        <dl class="ledger">
+          <div><dt>Oliver, a governed AI analyst</dt><dd>Leaders ask business questions in Slack or a web app and get validated, read-only answers from BigQuery. Includes a metric library, specialist agents for retention, acquisition, churn and funnel, and an approval step for new metric definitions.</dd></div>
+          <div><dt>BigQuery MCP server</dt><dd>A production Model Context Protocol server with a read-only SQL guard and schema discovery, so analysts get safe AI access to the warehouse.</dd></div>
+          <div><dt>Leaving a pipeline vendor</dt><dd>Led the move off Hevo to a native Shopify-to-BigQuery pipeline, with parallel validation and cutover runbooks.<span>Cloud Functions, Polars, partition-scoped MERGE</span></dd></div>
+          <div><dt>Customer data platform</dt><dd>Primary engineer on a warehouse-first customer data platform, working with the dev team: Dataform marts, reverse ETL into Klaviyo and Iterable, and RudderStack Profiles monitoring.</dd></div>
+          <div><dt>Subscription migration</dt><dd>Led the move from StayAI to Skio for subscription management.</dd></div>
+          <div><dt>Retail partner ingest</dt><dd>Designed an ingest from a partner file service through Cloud Storage into BigQuery: 61 reports into 13 tables, with MERGE logic, data-quality checks, and Slack alerts.</dd></div>
+        </dl>
+      </div>
+    </section>
+
     <section id="results" aria-labelledby="results-h">
       <div class="cols">
-        <h2 id="results-h">What changed at Seed Health</h2>
+        <h2 id="results-h">Results at Seed Health</h2>
         <div>
           <table>
             <caption>Results from July 2023 to October 2025</caption>
@@ -246,20 +260,6 @@ footer{margin-top:5rem;padding:1.5rem 0 2.5rem;border-top:1px solid var(--rule);
             </tbody>
           </table>
         </div>
-      </div>
-    </section>
-
-    <section id="work" aria-labelledby="work-h">
-      <div class="cols">
-        <h2 id="work-h">Recent work at Dose Daily</h2>
-        <dl class="ledger">
-          <div><dt>Oliver, a governed AI analyst</dt><dd>Leaders ask business questions in Slack or a web app and get validated, read-only answers from BigQuery. Includes a metric library, specialist agents for retention, acquisition, churn and funnel, and an approval step for new metric definitions.</dd></div>
-          <div><dt>BigQuery MCP server</dt><dd>A production Model Context Protocol server with a read-only SQL guard and schema discovery, so analysts get safe AI access to the warehouse.</dd></div>
-          <div><dt>Leaving a pipeline vendor</dt><dd>Led the move off Hevo to a native Shopify-to-BigQuery pipeline, with parallel validation and cutover runbooks.<span>Cloud Functions, Polars, partition-scoped MERGE</span></dd></div>
-          <div><dt>Customer data platform</dt><dd>Primary engineer on a warehouse-first customer data platform, working with the dev team: Dataform marts, reverse ETL into Klaviyo and Iterable, and RudderStack Profiles monitoring.</dd></div>
-          <div><dt>Subscription migration</dt><dd>Led the move from StayAI to Skio for subscription management.</dd></div>
-          <div><dt>Retail partner ingest</dt><dd>Designed an ingest from a partner file service through Cloud Storage into BigQuery: 61 reports into 13 tables, with MERGE logic, data-quality checks, and Slack alerts.</dd></div>
-        </dl>
       </div>
     </section>
 

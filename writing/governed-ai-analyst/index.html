@@ -56,6 +56,46 @@
 
   <p>I'm the principal data engineer at Dose Daily, and I built the assistant we call Oliver. It runs in Slack and in a web app. What follows is the list, with the reasoning behind each item.</p>
 
+  <figure class="diagram">
+    <svg viewBox="0 0 580 506" role="img" aria-labelledby="flow-t flow-d" xmlns="http://www.w3.org/2000/svg">
+    <title id="flow-t">How a question moves through the analyst</title>
+    <desc id="flow-d">A question passes through a specialist, the approved metric library, and a read-only guard before BigQuery runs it and an answer returns. Undefined metrics go to review. Unsafe requests are refused with a reason.</desc>
+    <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="fl-arrow"/></marker></defs>
+    <rect x="20" y="10" width="300" height="56" class="fl-box fl-end"/>
+    <text x="36" y="33" class="fl-t">A question</text>
+    <text x="36" y="53" class="fl-s">In Slack or the web app</text>
+    <line x1="170.0" y1="66" x2="170.0" y2="93" class="fl-line" marker-end="url(#ar)"/>
+    <rect x="20" y="96" width="300" height="56" class="fl-box"/>
+    <text x="36" y="119" class="fl-t">A specialist</text>
+    <text x="36" y="139" class="fl-s">Retention, acquisition, churn, funnel</text>
+    <line x1="170.0" y1="152" x2="170.0" y2="179" class="fl-line" marker-end="url(#ar)"/>
+    <rect x="20" y="182" width="300" height="56" class="fl-box"/>
+    <text x="36" y="205" class="fl-t">Metric library</text>
+    <text x="36" y="225" class="fl-s">Approved definitions only</text>
+    <line x1="170.0" y1="238" x2="170.0" y2="265" class="fl-line" marker-end="url(#ar)"/>
+    <rect x="20" y="268" width="300" height="56" class="fl-box"/>
+    <text x="36" y="291" class="fl-t">Read-only guard</text>
+    <text x="36" y="311" class="fl-s">SELECT statements only</text>
+    <line x1="170.0" y1="324" x2="170.0" y2="351" class="fl-line" marker-end="url(#ar)"/>
+    <rect x="20" y="354" width="300" height="56" class="fl-box"/>
+    <text x="36" y="377" class="fl-t">BigQuery</text>
+    <text x="36" y="397" class="fl-s">Runs the approved query</text>
+    <line x1="170.0" y1="410" x2="170.0" y2="437" class="fl-line" marker-end="url(#ar)"/>
+    <rect x="20" y="440" width="300" height="56" class="fl-box fl-end"/>
+    <text x="36" y="463" class="fl-t">An answer</text>
+    <text x="36" y="483" class="fl-s">Back in the same thread</text>
+    <line x1="320" y1="210.0" x2="377" y2="210.0" class="fl-line fl-dash" marker-end="url(#ar)"/>
+    <rect x="380" y="182" width="180" height="56" class="fl-box fl-side"/>
+    <text x="394" y="205" class="fl-t">Not defined</text>
+    <text x="394" y="225" class="fl-s">Goes to GitHub review</text>
+    <line x1="320" y1="296.0" x2="377" y2="296.0" class="fl-line fl-dash" marker-end="url(#ar)"/>
+    <rect x="380" y="268" width="180" height="56" class="fl-box fl-side"/>
+    <text x="394" y="291" class="fl-t">Refused</text>
+    <text x="394" y="311" class="fl-s">With the reason why</text>
+    </svg>
+    <figcaption>A simplified view of how a question moves through the analyst. The dashed paths are the two places it stops.</figcaption>
+  </figure>
+
   <h2>It only reads</h2>
   <p>Every query passes through a guard that allows SELECT statements and nothing else. The guard sits outside the model on purpose. A prompt can persuade a model to do many things, but it cannot persuade a piece of code that checks the statement type.</p>
   <p>The reason is blast radius. A person who asks a question is running it against the same warehouse that feeds finance and marketing. A wrong answer is embarrassing. A changed table is an incident. We decided early that the first could happen and the second could not.</p>

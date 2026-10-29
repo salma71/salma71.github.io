@@ -35,3 +35,15 @@ article p{margin:0 0 1.25rem}
 .back{font-family:var(--display);font-weight:600}
 footer{max-width:42rem;margin:4rem auto 0;padding:1.5rem 1.5rem 2.5rem;border-top:1px solid var(--rule);color:var(--muted);font-size:.95rem}
 @media (max-width:30rem){.page{padding:0 1.1rem}.narrow{padding:2.5rem 1.1rem 0}}
+
+.diagram{margin:2.2rem 0 2.4rem;padding:0}
+.diagram svg{width:100%;height:auto;display:block;max-width:34rem}
+.diagram figcaption{font-family:var(--display);font-size:.9rem;color:var(--muted);margin-top:.8rem}
+.fl-box{fill:var(--paper);stroke:var(--ink);stroke-width:1.5}
+.fl-end{stroke-width:2.5}
+.fl-side{stroke:var(--signal);stroke-width:2}
+.fl-t{font-family:var(--display);font-weight:700;font-size:17px;fill:var(--ink)}
+.fl-s{font-family:var(--text);font-size:14px;fill:var(--muted)}
+.fl-line{stroke:var(--ink);stroke-width:1.5}
+.fl-dash{stroke:var(--signal);stroke-dasharray:5 4}
+.fl-arrow{fill:var(--ink)}
