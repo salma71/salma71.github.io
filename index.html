@@ -1,44 +1,320 @@
----
-layout: default
-robots: noindex
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Salma Elmasry – Principal Data Engineer | BigQuery, Snowflake</title>
+<meta name="description" content="Salma Elmasry is a Principal Data Engineer who builds governed cloud data platforms on BigQuery and Snowflake, cuts vendor costs, and ships AI analytics.">
+<meta name="author" content="Salma Elmasry">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0e1b2a">
+<link rel="canonical" href="https://salma71.github.io/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230e1b2a'/%3E%3Cpath d='M14 34l12 12 24-26' fill='none' stroke='%23ff5b14' stroke-width='8'/%3E%3C/svg%3E">
 
-<!--<div class="main-post-list">-->
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Salma Elmasry">
+<meta property="og:title" content="Salma Elmasry – Principal Data Engineer">
+<meta property="og:description" content="Governed cloud data platforms, vendor and warehouse cost reduction, and AI analytics on BigQuery and Snowflake.">
+<meta property="og:url" content="https://salma71.github.io/">
+<meta property="og:image" content="https://salma71.github.io/og-image.png">
+<meta property="og:image:alt" content="Salma Elmasry, Principal Data Engineer">
+<meta property="profile:first_name" content="Salma">
+<meta property="profile:last_name" content="Elmasry">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Salma Elmasry – Principal Data Engineer">
+<meta name="twitter:description" content="Governed cloud data platforms, vendor and warehouse cost reduction, and AI analytics on BigQuery and Snowflake.">
+<meta name="twitter:image" content="https://salma71.github.io/og-image.png">
 
-  <ul class="timeline">
-    
-    {% for project in site.data.projects %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://salma71.github.io/#website",
+      "url": "https://salma71.github.io/",
+      "name": "Salma Elmasry",
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://salma71.github.io/#person",
+      "name": "Salma Elmasry",
+      "url": "https://salma71.github.io/",
+      "jobTitle": "Principal Data Engineer",
+      "description": "Principal Data Engineer who builds governed cloud data platforms on BigQuery and Snowflake.",
+      "worksFor": { "@type": "Organization", "name": "Dose Daily" },
+      "alumniOf": { "@type": "CollegeOrUniversity", "name": "The City University of New York (CUNY)" },
+      "knowsAbout": ["Data engineering", "BigQuery", "Snowflake", "dbt", "Apache Airflow", "Google Cloud Platform", "Data governance", "Customer data platforms", "Model Context Protocol"],
+      "sameAs": [
+        "https://www.linkedin.com/in/salma-elmasry/",
+        "https://github.com/salma71"
+      ]
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://salma71.github.io/#profile",
+      "url": "https://salma71.github.io/",
+      "mainEntity": { "@id": "https://salma71.github.io/#person" },
+      "isPartOf": { "@id": "https://salma71.github.io/#website" }
+    }
+  ]
+}
+</script>
 
-      <li class="timeline-inverted">
-        <div class="timeline-image">
-          <img class="img-me" src="{{ project.img | prepend: site.baseurl }}" alt="">
-        </div>
-        <div class="timeline-panel">
-          <div class="timeline-heading">
-            <h4><a href="https://github.com/{{ project.gh_user }}/{{ project.repo }}" target="_blank">{{ project.name }}</a></h4>
-            <a href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/topics/{{ project.topic }}" target="_blank"><i class="fa fa-tag" aria-hidden="true"></i>{{ project.topic }}</a>
-            <a class="demo" href="{{ project.url-s }}" target="_blank"> | Demo</a>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&amp;family=JetBrains+Mono:wght@400;500&amp;family=Source+Serif+4:opsz,wght@8..60,400..700&amp;display=swap">
 
-          </div>
-          <div class="timeline-body">
-            {{ project.desc | markdownify }}
-            <div user="{{ project.gh_user }}" repo="{{ project.repo }}" class="ghbtn" style="margin-top: 10px;">
-              <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/stargazers"><i class="fa fa-star"></i><span class="star"> ...</span></a>&emsp;&emsp;
-              <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/network"><i class="fa fa-code-fork"></i><span class="fork"> ...</span></a>&emsp;&emsp;
-              <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/watchers"><i class="far fa-eye"></i><span class="watchers">...</span></a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/watchers">
+<style>
+:root{
+  --paper:#eef1f4; --ink:#0e1b2a; --muted:#4a5b6d; --rule:#c6cfd8;
+  --link:#2340d9; --signal:#ff5b14; --panel:#0e1b2a; --panel-ink:#e8edf2; --panel-dim:#8fa1b3;
+  --grid:rgba(14,27,42,.06);
+  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  --text:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --code:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --paper:#0a1420; --ink:#e8edf2; --muted:#9aabbc; --rule:#22344a;
+    --link:#8ea2ff; --signal:#ff7a3d; --panel:#13243a; --panel-ink:#e8edf2; --panel-dim:#8fa1b3;
+    --grid:rgba(232,237,242,.05);
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:1.125rem/1.7 var(--text);-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-underline-offset:.2em}
+a:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:var(--paper);padding:.6rem 1rem;z-index:10}
+.skip:focus{left:0}
+.page{max-width:68rem;margin:0 auto;padding:0 1.5rem}
 
-              <div style="height: 10px;"></div>
-          </div>
-        </div>
-      </li>
-    {% endfor %}
-    <!--
-    <li class="timeline-inverted">
-      <div class="timeline-image">
-        <img class="user-image" src="{{site.baseurl}}{{ site.timeline-img }}" alt="">
+/* top bar */
+.bar{display:flex;justify-content:space-between;align-items:baseline;gap:1.5rem;padding:1.4rem 0;font-family:var(--display);font-size:1rem}
+.bar .name{font-weight:700;color:var(--ink);text-decoration:none;letter-spacing:-.01em}
+.bar nav{display:flex;gap:1.4rem;flex-wrap:wrap}
+.bar nav a{color:var(--muted);text-decoration:none}
+.bar nav a:hover{color:var(--ink);text-decoration:underline}
+
+/* hero */
+.hero{background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:32px 32px;background-position:-1px -1px;border-bottom:1px solid var(--rule)}
+.hero .page{padding-top:3.5rem;padding-bottom:4rem;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:3rem;align-items:center}
+.hero h1{font-family:var(--display);font-weight:700;font-stretch:80%;font-size:clamp(2.5rem,6.4vw,4.75rem);line-height:1.02;letter-spacing:-.035em;margin:0 0 1.5rem;text-wrap:balance}
+.hero .lede{font-size:1.2rem;color:var(--muted);max-width:34rem;margin:0 0 1.75rem}
+.hero .lede strong{color:var(--ink);font-weight:600}
+.hero .links{display:flex;flex-wrap:wrap;gap:.4rem 1.5rem;font-family:var(--display);font-weight:600}
+
+/* the query panel */
+.run{background:var(--panel);color:var(--panel-ink);font-family:var(--code);font-size:.8125rem;line-height:1.7;padding:1.25rem 1.4rem 1.4rem;border-left:6px solid var(--signal)}
+.run p{margin:0}
+.run .cap{color:var(--panel-dim);margin-bottom:1rem;font-family:var(--text);font-size:.85rem;font-style:italic}
+.run .ask{display:flex;gap:.6rem;margin-bottom:1rem}
+.run .ask b{color:var(--signal);font-weight:500}
+.typed{display:inline-block;overflow:hidden;white-space:nowrap;vertical-align:bottom;max-width:100%;border-right:2px solid var(--signal);animation:type 1.8s steps(34,end) .4s both,caret .6s step-end 4 2.2s forwards}
+.sql{margin:0 0 1rem;white-space:pre-wrap;color:var(--panel-ink);animation:show .5s ease 2.3s both}
+.sql i{color:#8ea2ff;font-style:normal}
+@media (prefers-color-scheme: dark){.sql i{color:#a9b8ff}}
+.checks{list-style:none;margin:0;padding:0}
+.checks li{display:flex;gap:.7rem;animation:show .4s ease both}
+.checks li::before{content:"\2713";color:var(--signal);font-weight:500}
+.checks li:nth-child(1){animation-delay:2.9s}
+.checks li:nth-child(2){animation-delay:3.2s}
+.checks li:nth-child(3){animation-delay:3.5s}
+.checks li:nth-child(4){animation-delay:3.8s}
+@keyframes type{from{width:0}to{width:34ch}}
+@keyframes caret{to{border-right-color:transparent}}
+@keyframes show{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .typed,.sql,.checks li{animation:none}
+  .typed{border-right-color:transparent}
+}
+
+/* sections */
+section{padding:4rem 0 0}
+.cols{display:grid;grid-template-columns:12rem minmax(0,1fr);gap:1rem 3rem}
+h2{font-family:var(--display);font-weight:700;font-stretch:85%;font-size:1.5rem;letter-spacing:-.02em;line-height:1.2;margin:0}
+.body{max-width:42rem}
+.body p{margin:0 0 1.1rem}
+
+/* impact table */
+table{width:100%;border-collapse:collapse;font-size:1rem;line-height:1.5}
+caption{text-align:left;color:var(--muted);padding-bottom:.8rem}
+th,td{text-align:left;vertical-align:top;padding:.85rem 1rem .85rem 0;border-top:1px solid var(--rule)}
+th{font-family:var(--display);font-weight:600;font-size:.95rem;color:var(--muted)}
+tbody th{color:var(--ink);font-weight:600}
+td.r{font-family:var(--display);font-weight:700;font-size:1.05rem;white-space:nowrap}
+
+/* work ledger */
+.ledger{margin:0}
+.ledger div{display:grid;grid-template-columns:minmax(0,13rem) minmax(0,1fr);gap:.4rem 2rem;padding:1.1rem 0;border-top:1px solid var(--rule)}
+.ledger dt{font-family:var(--display);font-weight:700;font-size:1.1rem;letter-spacing:-.01em;line-height:1.3}
+.ledger dd{margin:0;color:var(--muted)}
+.ledger dd span{display:block;margin-top:.35rem;font-family:var(--code);font-size:.78rem;color:var(--muted)}
+
+/* experience */
+.exp{margin:0}
+.exp div{display:grid;grid-template-columns:minmax(0,13rem) minmax(0,1fr);gap:.2rem 2rem;padding:1rem 0;border-top:1px solid var(--rule)}
+.exp dt{color:var(--muted);font-size:1rem}
+.exp dd{margin:0}
+.exp dd b{font-family:var(--display);font-weight:700}
+.exp dd small{display:block;color:var(--muted);font-size:1rem;margin-top:.2rem}
+
+.skills p{margin:0 0 .9rem}
+.skills p b{font-family:var(--display);font-weight:700}
+
+.contact a{font-family:var(--display);font-weight:700;font-size:clamp(1.6rem,4vw,2.4rem);letter-spacing:-.02em;display:block;line-height:1.3}
+
+footer{margin-top:5rem;padding:1.5rem 0 2.5rem;border-top:1px solid var(--rule);color:var(--muted);font-size:.95rem}
+
+@media (max-width:52rem){
+  .hero .page{grid-template-columns:1fr;gap:2.25rem;padding-top:2.25rem}
+  .cols{grid-template-columns:1fr}
+  .ledger div,.exp div{grid-template-columns:1fr}
+  td.r{white-space:normal}
+}
+@media (max-width:30rem){
+  .run{font-size:.72rem;padding:1rem}
+  .page{padding:0 1.1rem}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="page">
+  <header class="bar">
+    <a class="name" href="#top">Salma Elmasry</a>
+    <nav aria-label="Primary">
+      <a href="#results">Results</a>
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="/writing/">Writing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+</div>
+
+<main id="main">
+  <div class="hero" id="top">
+    <div class="page">
+      <div>
+        <h1>I build data platforms people can ask questions of, and trust the answers.</h1>
+        <p class="lede"><strong>Principal Data Engineer at Dose Daily.</strong> Eight years building cloud data infrastructure on BigQuery and Snowflake for small, fast-moving teams: vendor migrations, cost control, and AI analytics with guardrails.</p>
+        <p class="links">
+          <a href="https://www.linkedin.com/in/salma-elmasry/" rel="me noopener">LinkedIn</a>
+          <a href="https://github.com/salma71" rel="me noopener">GitHub</a>
+          <a href="mailto:salmaeng71@gmail.com">Email</a>
+        </p>
       </div>
-    </li> -->
-  </ul>
 
-<!--</div>-->
+      <figure class="run" style="margin:0" aria-label="Example of a governed question running against a warehouse">
+        <p class="cap">An example of how a governed question runs</p>
+        <p class="ask"><b>Ask</b><span class="typed">Cancellations last month, by plan?</span></p>
+<pre class="sql"><i>SELECT</i> plan, <i>COUNT</i>(*) AS cancellations
+<i>FROM</i> subscriptions
+<i>WHERE</i> cancelled_at <i>BETWEEN</i> @month_start <i>AND</i> @month_end
+<i>GROUP BY</i> plan</pre>
+        <ul class="checks">
+          <li>Read-only: SELECT statements only</li>
+          <li>Partition filter present</li>
+          <li>Dry run is inside the scan budget</li>
+          <li>Metric matches the approved definition</li>
+        </ul>
+      </figure>
+    </div>
+  </div>
 
+  <div class="page">
+
+    <section id="results" aria-labelledby="results-h">
+      <div class="cols">
+        <h2 id="results-h">What changed at Seed Health</h2>
+        <div>
+          <table>
+            <caption>Results from July 2023 to October 2025</caption>
+            <thead><tr><th scope="col">What I did</th><th scope="col">Result</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Replaced Fivetran with a custom pipeline</th><td class="r">Pipeline budget down 50%</td></tr>
+              <tr><th scope="row">Renegotiated the Snowflake contract and tuned usage</th><td class="r">Committed spend down 60%+, plus an extra year at no cost</td></tr>
+              <tr><th scope="row">Automated dependencies in Apache Airflow</th><td class="r">Manual intervention down 70%</td></tr>
+              <tr><th scope="row">Added monitoring and Slack alerts through the dbt API</th><td class="r">Critical job failures down 50%</td></tr>
+              <tr><th scope="row">Wrote scripts to convert Snowflake SQL into dbt models</th><td class="r">Analyst time down 60% during the migration</td></tr>
+              <tr><th scope="row">Generated a data dictionary with Snowflake Cortex</th><td class="r">Stakeholder back-and-forth down 40%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" aria-labelledby="work-h">
+      <div class="cols">
+        <h2 id="work-h">Recent work at Dose Daily</h2>
+        <dl class="ledger">
+          <div><dt>Oliver, a governed AI analyst</dt><dd>Leaders ask business questions in Slack or a web app and get validated, read-only answers from BigQuery. Includes a metric library, specialist agents for retention, acquisition, churn and funnel, and an approval step for new metric definitions.</dd></div>
+          <div><dt>BigQuery MCP server</dt><dd>A production Model Context Protocol server with a read-only SQL guard and schema discovery, so analysts get safe AI access to the warehouse.</dd></div>
+          <div><dt>Leaving a pipeline vendor</dt><dd>Led the move off Hevo to a native Shopify-to-BigQuery pipeline, with parallel validation and cutover runbooks.<span>Cloud Functions, Polars, partition-scoped MERGE</span></dd></div>
+          <div><dt>Customer data platform</dt><dd>Primary engineer on a warehouse-first customer data platform, working with the dev team: Dataform marts, reverse ETL into Klaviyo and Iterable, and RudderStack Profiles monitoring.</dd></div>
+          <div><dt>Subscription migration</dt><dd>Led the move from StayAI to Skio for subscription management.</dd></div>
+          <div><dt>Retail partner ingest</dt><dd>Designed an ingest from a partner file service through Cloud Storage into BigQuery: 61 reports into 13 tables, with MERGE logic, data-quality checks, and Slack alerts.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="experience" aria-labelledby="exp-h">
+      <div class="cols">
+        <h2 id="exp-h">Experience</h2>
+        <dl class="exp">
+          <div><dt>Nov 2025 to now</dt><dd><b>Principal Data Engineer, player-coach</b><small>Dose Daily, remote</small></dd></div>
+          <div><dt>Jul 2023 to Oct 2025</dt><dd><b>Senior Data Engineer</b><small>Seed Health, remote</small></dd></div>
+          <div><dt>Jan 2021 to Jul 2023</dt><dd><b>Python Data Engineer II</b><small>Fortune Magazine, New York</small></dd></div>
+          <div><dt>2018 to 2020</dt><dd><b>Data Scientist, Data Engineer, Software Engineer II</b><small>Gradio, CarOpp, Cognizant</small></dd></div>
+          <div><dt>2021</dt><dd><b>M.S. in Applied Statistics</b><small>The City University of New York, GPA 3.96</small></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="writing" aria-labelledby="writing-h">
+      <div class="cols">
+        <h2 id="writing-h">Writing</h2>
+        <div class="body">
+          <p>Essays on this site, and older technical notes on <a href="https://salmaeng71.medium.com/" rel="me noopener">Medium</a>. <a href="/writing/">All writing</a>.</p>
+          <dl class="ledger">
+            <div><dt><a href="/writing/governed-ai-analyst/">What we refused to let our AI analyst do</a></dt><dd>How a read-only analyst on BigQuery got its design from a list of things it would never do. October 2026.</dd></div>
+            <div><dt>Scheduling ETL jobs on AWS</dt><dd>How to automate data extraction jobs that run on EC2. August 2021.</dd></div>
+            <div><dt>Python environments with GitHub Actions</dt><dd>Automating checks on a GitHub-hosted project so pull requests stop breaking the code. January 2021.</dd></div>
+            <div><dt>Multiprocessing and pickle</dt><dd>Fixing serialization errors in multiprocessing code, including the dill package. December 2020.</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-h">
+      <div class="cols">
+        <h2 id="skills-h">Tools I work with</h2>
+        <div class="body skills">
+          <p><b>Cloud and warehouses.</b> Google Cloud Platform (BigQuery, Cloud Functions, Cloud Run, IAM), AWS (EC2, S3, RDS), Snowflake including Cortex.</p>
+          <p><b>Engineering.</b> Python, SQL, Polars, Spark, Apache Airflow, dbt, Dataform, Apache Kafka, Docker, CI/CD.</p>
+          <p><b>AI and governance.</b> MCP servers, governed AI analytics, IAM governance, data quality, data modeling.</p>
+          <p><b>Customer data.</b> Segment, RudderStack, Mixpanel, Klaviyo, Iterable, Shopify, Skio, Gorgias.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact" aria-labelledby="contact-h">
+      <div class="cols">
+        <h2 id="contact-h">Contact</h2>
+        <div>
+          <a href="mailto:salmaeng71@gmail.com">salmaeng71@gmail.com</a>
+          <a href="https://www.linkedin.com/in/salma-elmasry/" rel="me noopener">linkedin.com/in/salma-elmasry</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>&copy; 2026 Salma Elmasry</footer>
+  </div>
+</main>
+</body>
+</html>

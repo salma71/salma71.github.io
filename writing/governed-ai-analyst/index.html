@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What we refused to let our AI analyst do | Salma Elmasry</title>
+<meta name="description" content="How a read-only AI analyst on BigQuery got its design from a list of things it would never do: write data, invent metrics, or answer unsafe questions.">
+<meta name="author" content="Salma Elmasry">
+<link rel="canonical" href="https://salma71.github.io/writing/governed-ai-analyst/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:title" content="What we refused to let our AI analyst do">
+<meta property="og:description" content="The design of a read-only question-answering layer on BigQuery started with a list of things it would never do.">
+<meta property="og:url" content="https://salma71.github.io/writing/governed-ai-analyst/">
+<meta property="og:image" content="https://salma71.github.io/og-image.png">
+<meta property="article:author" content="Salma Elmasry">
+<meta property="article:published_time" content="2026-10-29">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "What we refused to let our AI analyst do",
+  "description": "How a read-only AI analyst on BigQuery got its design from a list of things it would never do.",
+  "datePublished": "2026-10-29",
+  "author": { "@type": "Person", "name": "Salma Elmasry", "url": "https://salma71.github.io/" },
+  "mainEntityOfPage": "https://salma71.github.io/writing/governed-ai-analyst/",
+  "image": "https://salma71.github.io/og-image.png"
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&amp;family=Source+Serif+4:opsz,wght@8..60,400..700&amp;display=swap">
+<link rel="stylesheet" href="/writing/writing.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="page">
+  <header class="bar">
+    <a class="name" href="/">Salma Elmasry</a>
+    <nav aria-label="Primary">
+      <a href="/#work">Work</a>
+      <a href="/#experience">Experience</a>
+      <a href="/writing/">Writing</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+  </header>
+</div>
+<main id="main" class="narrow">
+<article>
+  <h1>What we refused to let our AI analyst do</h1>
+  <p class="dek">The design of a read-only question-answering layer on BigQuery started with a list of things it would never do.</p>
+  <p class="meta">Salma Elmasry, October 2026</p>
+
+  <p>Our leaders wanted to ask the warehouse questions in plain language. Making something that answers was the easy half. Deciding what it would never do took longer, and that list shaped the design more than any choice of model did.</p>
+
+  <p>I'm the principal data engineer at Dose Daily, and I built the assistant we call Oliver. It runs in Slack and in a web app. What follows is the list, with the reasoning behind each item.</p>
+
+  <h2>It only reads</h2>
+  <p>Every query passes through a guard that allows SELECT statements and nothing else. The guard sits outside the model on purpose. A prompt can persuade a model to do many things, but it cannot persuade a piece of code that checks the statement type.</p>
+  <p>The reason is blast radius. A person who asks a question is running it against the same warehouse that feeds finance and marketing. A wrong answer is embarrassing. A changed table is an incident. We decided early that the first could happen and the second could not.</p>
+
+  <h2>It doesn't make up metrics</h2>
+  <p>Ask three people for last month's churn and you can get three numbers, because each of them means something slightly different. A language model will happily pick one meaning and sound sure about it.</p>
+  <p>So Oliver answers from a library of approved metric definitions. If someone asks for something that isn't in the library, it says so. A new definition goes through a review on GitHub before it goes live, the same way code does. This is slower than letting the model improvise. It also means two leaders who ask the same question on different days get the same number, which is most of what trust in a data team comes down to.</p>
+
+  <h2>It says no to unsafe questions, and says why</h2>
+  <p>Some questions should not be answered by a chat window: anything that could expose data a person isn't meant to see, or that would scan far more of the warehouse than the question deserves. Oliver denies those requests and tells the person what it can do instead.</p>
+  <p>A plain refusal with a reason does more for adoption than people expect. A silent failure looks like a broken tool. A clear no looks like a tool with rules, and people forgive rules.</p>
+
+  <h2>It stays inside narrow domains</h2>
+  <p>Retention, acquisition, churn and funnel questions each have their own specialist. Narrow scopes are easier to check. When a churn answer looks wrong, there is one place to look, and one person who can tell you what right looks like.</p>
+
+  <h2>What I would tell another team</h2>
+  <p>Write the refusals before you write the prompts. Treat the metric library as the product and the chat interface as the front door. And expect the first months to feel stricter than people want, because a tool that answers fewer questions correctly earns more trust than one that answers every question with confidence.</p>
+  <p>Most of the engineering in this project went into saying no in the right places. I think that is the part worth copying.</p>
+
+  <p class="back"><a href="/writing/">All writing</a></p>
+</article>
+</main>
+<footer>&copy; 2026 Salma Elmasry</footer>
+</body>
+</html>
