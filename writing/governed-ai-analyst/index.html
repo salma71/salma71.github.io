@@ -57,10 +57,29 @@
   <p>I'm the principal data engineer at Dose Daily, and I built the assistant we call Oliver. It runs in Slack and in a web app. What follows is the list, with the reasoning behind each item.</p>
 
   <figure class="diagram">
-    <svg viewBox="0 0 580 506" role="img" aria-labelledby="flow-t flow-d" xmlns="http://www.w3.org/2000/svg">
+    <svg class="fl-self" viewBox="0 0 580 506" role="img" aria-labelledby="flow-t flow-d" xmlns="http://www.w3.org/2000/svg">
     <title id="flow-t">How a question moves through the analyst</title>
     <desc id="flow-d">A question passes through a specialist, the approved metric library, and a read-only guard before BigQuery runs it and an answer returns. Undefined metrics go to review. Unsafe requests are refused with a reason.</desc>
-    <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="fl-arrow"/></marker></defs>
+    <style>
+.fl-box{fill:#eef1f4;stroke:#0e1b2a;stroke-width:1.5}
+.fl-end{stroke-width:2.5}
+.fl-side{stroke:#ff5b14;stroke-width:2}
+.fl-t{font:700 17px "Bricolage Grotesque",ui-sans-serif,system-ui,Arial,sans-serif;fill:#0e1b2a}
+.fl-s{font:14px "Source Serif 4",Georgia,serif;fill:#4a5b6d}
+.fl-line{stroke:#0e1b2a;stroke-width:1.5;fill:none}
+.fl-dash{stroke:#ff5b14;stroke-dasharray:5 4}
+.fl-arrow{fill:#0e1b2a}
+@media (prefers-color-scheme: dark){
+.fl-box{fill:#0a1420;stroke:#e8edf2}
+.fl-side{stroke:#ff7a3d}
+.fl-t{fill:#e8edf2}
+.fl-s{fill:#9aabbc}
+.fl-line{stroke:#e8edf2}
+.fl-dash{stroke:#ff7a3d}
+.fl-arrow{fill:#e8edf2}
+}
+</style>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="fl-arrow"/></marker></defs>
     <rect x="20" y="10" width="300" height="56" class="fl-box fl-end"/>
     <text x="36" y="33" class="fl-t">A question</text>
     <text x="36" y="53" class="fl-s">In Slack or the web app</text>
